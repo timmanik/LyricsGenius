@@ -6,6 +6,7 @@ from filecmp import cmp
 
 from .base import BaseEntity, Stats
 from .artist import Artist
+import re
 
 class Song(BaseEntity):
     """A song from the Genius.com database."""
