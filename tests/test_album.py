@@ -3,7 +3,7 @@ import os
 import warnings
 
 from . import genius
-from lyricsgenius.types import Album
+from lyricsgeniustim.types import Album
 
 
 class TestAlbum(unittest.TestCase):

@@ -1,6 +1,6 @@
 import os
 
-from lyricsgenius import Genius
+from lyricsgeniustim import Genius
 
 
 # Import client access token from environment variable

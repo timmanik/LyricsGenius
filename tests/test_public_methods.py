@@ -1,6 +1,6 @@
 import unittest
 
-from lyricsgenius import PublicAPI
+from lyricsgeniustim import PublicAPI
 
 from . import genius
 
