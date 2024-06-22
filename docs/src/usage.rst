@@ -1,5 +1,5 @@
 .. _usage:
-.. currentmodule:: lyricsgenius
+.. currentmodule:: lyricsgeniustim
 
 Usage
 ==================
@@ -8,7 +8,7 @@ Import the package and search for songs by a given artist:
 
 .. code:: python
 
-   from lyricsgenius import Genius
+   from lyricsgeniustim import Genius
 
    genius = Genius(token)
    artist = genius.search_artist("Andy Shauf", max_songs=3, sort="title")
@@ -71,20 +71,20 @@ You can also call the package from the command line:
 .. code:: bash
 
    export GENIUS_ACCESS_TOKEN="my_access_token_here"
-   python3 -m lyricsgenius --help
+   python3 -m lyricsgeniustim --help
 
 Search for and save lyrics to a given song and album:
 
 .. code:: bash
 
-   python3 -m lyricsgenius song "Begin Again" "Andy Shauf" --save
+   python3 -m lyricsgeniustim song "Begin Again" "Andy Shauf" --save
    python3 -m lyricsgenius album "The Party" "Andy Shauf" --save
 
 Search for five songs by ‘The Beatles’ and save the lyrics:
 
 .. code:: bash
 
-   python3 -m lyricsgenius artist "The Beatles" --max-songs 5 --save
+   python3 -m lyricsgeniustim artist "The Beatles" --max-songs 5 --save
 
 
 You might also like checking out the :ref:`snippets` page. 

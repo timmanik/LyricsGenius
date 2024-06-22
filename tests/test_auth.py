@@ -129,7 +129,7 @@ class TestOAuth2(unittest.TestCase):
         auth = OAuth2(client_id, redirect_uri,
                       client_secret, scope='all')
         token = 'test'
-        current_module = 'lyricsgenius.auth'
+        current_module = 'lyricsgeniustim.auth'
 
         input_ = MagicMock(return_value='http://example.com?code=some_code')
         with patch(current_module + '.webbrowser', MagicMock()), \
