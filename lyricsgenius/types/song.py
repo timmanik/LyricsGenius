@@ -7,7 +7,6 @@ from filecmp import cmp
 from .base import BaseEntity, Stats
 from .artist import Artist
 
-
 class Song(BaseEntity):
     """A song from the Genius.com database."""
 
@@ -17,7 +16,7 @@ class Song(BaseEntity):
         self._body = body
         self._client = client
         self.artist = body['primary_artist']['name']
-        self.lyrics = lyrics if lyrics else ""
+        self.lyrics = self.clean_lyrics(lyrics if lyrics else "")
         self.primary_artist = Artist(client, body['primary_artist'])
         self.stats = Stats(body['stats'])
 
@@ -35,6 +34,12 @@ class Song(BaseEntity):
         self.title = body['title']
         self.title_with_featured = body['title_with_featured']
         self.url = body['url']
+
+    def clean_lyrics(self, lyrics):
+        # Remove patterns like "46 Contributors" and "20Embed"
+        lyrics = re.sub(r'\d+\s+Contributors', '', lyrics)
+        lyrics = re.sub(r'\d+Embed', '', lyrics)
+        return lyrics.strip()
 
     def to_dict(self):
         body = super().to_dict()
