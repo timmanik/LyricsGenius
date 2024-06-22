@@ -50,7 +50,7 @@ setup(
     license="MIT",
     author='John W. Miller',
     author_email='john.w.millr+lg@gmail.com',
-    url='https://github.com/johnwmillr/lyricsgenius',
+    url='https://github.com/timmanik/LyricsGeniusTim',
     keywords='genius api genius-api music lyrics artists albums songs',
     packages=find_packages(exclude=['tests']),
     install_requires=[
@@ -60,7 +60,7 @@ setup(
     extras_require=extras_require,
     entry_points={
         'console_scripts': [
-            'lyricsgenius = lyricsgenius.__main__:main']
+            'lyricsgeniustim = lyricsgeniustim.__main__:main']
     },
     classifiers=[
         'Topic :: Software Development :: Libraries',

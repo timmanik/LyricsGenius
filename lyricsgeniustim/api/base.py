@@ -24,8 +24,8 @@ class Sender(object):
     ):
         self._session = requests.Session()
         self._session.headers = {
-            'application': 'LyricsGenius',
-            'User-Agent': 'https://github.com/johnwmillr/LyricsGenius'
+            'application': 'LyricsGeniusTim',
+            'User-Agent': 'https://github.com/timmanik/LyricsGeniusTim'
         }
         if access_token is None:
             access_token = os.environ.get('GENIUS_ACCESS_TOKEN')

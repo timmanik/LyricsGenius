@@ -2,8 +2,8 @@ import os
 import unittest
 
 from . import genius
-from lyricsgenius.types import Song
-from lyricsgenius.utils import clean_str
+from lyricsgeniustim.types import Song
+from lyricsgeniustim.utils import clean_str
 
 
 class TestSong(unittest.TestCase):
