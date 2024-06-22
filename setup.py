@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 
 assert sys.version_info[0] == 3, "LyricsGenius requires Python 3."
 
-VERSIONFILE = "lyricsgenius/__init__.py"
+VERSIONFILE = "lyricsgeniustim/__init__.py"
 ver_file = open(VERSIONFILE, "rt").read()
 VSRE = r"^__version__ = ['\"]([^'\"]*)['\"]"
 mo = re.search(VSRE, ver_file, re.M)
