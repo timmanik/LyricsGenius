@@ -2,8 +2,8 @@ import unittest
 import os
 
 from . import genius
-from lyricsgeniustim.types import Artist
-from lyricsgeniustim.utils import sanitize_filename
+from lyricsgenius.types import Artist
+from lyricsgenius.utils import sanitize_filename
 
 
 class TestArtist(unittest.TestCase):

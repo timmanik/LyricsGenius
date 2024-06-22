@@ -1,6 +1,6 @@
 import unittest
 
-from lyricsgeniustim.utils import (
+from lyricsgenius.utils import (
     parse_redirected_url,
     sanitize_filename,
     auth_from_environment

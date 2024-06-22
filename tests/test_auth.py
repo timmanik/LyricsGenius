@@ -3,8 +3,8 @@ import unittest
 from unittest.mock import MagicMock, patch
 
 
-from lyricsgeniustim import OAuth2
-from lyricsgeniustim.errors import InvalidStateError
+from lyricsgenius import OAuth2
+from lyricsgenius.errors import InvalidStateError
 
 client_id = os.environ["GENIUS_CLIENT_ID"]
 client_secret = os.environ["GENIUS_CLIENT_SECRET"]
