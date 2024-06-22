@@ -42,7 +42,7 @@ extras_require['dev'] = (
 )
 
 setup(
-    name='lyricsgenius',
+    name='lyricsgeniustim',
     version=version,
     description='Download lyrics and metadata from Genius.com',
     long_description=long_description,
